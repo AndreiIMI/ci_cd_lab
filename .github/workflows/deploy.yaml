@@ -29,6 +29,7 @@ jobs:
   # Job to compile the application
   compile:
     needs: test
+    if: success()
     # Specify the Os for the runner (container)
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
